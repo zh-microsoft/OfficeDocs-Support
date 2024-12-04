@@ -6203,6 +6203,11 @@
       "source_path": "Viva/learning/provider-content-ingestion-errors.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Microsoft365/compliance/holds/litigation-hold-mailbox-not-turn-into-inactive.md",
+      "redirect_url": "/exchange/troubleshoot/user-and-shared-mailboxes/litigation-hold-mailbox-not-turn-into-inactive",
+      "redirect_document_id": false
     }
   ]
 }
