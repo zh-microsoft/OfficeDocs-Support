@@ -1901,7 +1901,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/compliance.md",
+      "source_path": "Microsoft365/purview/compliance.md",
       "redirect_url": "/microsoft-365/troubleshoot/microsoft-365-compliance-welcome",
       "redirect_document_id": true
     },
@@ -6205,9 +6205,14 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/holds/litigation-hold-mailbox-not-turn-into-inactive.md",
+      "source_path": "Microsoft365/purview/holds/litigation-hold-mailbox-not-turn-into-inactive.md",
       "redirect_url": "/exchange/troubleshoot/user-and-shared-mailboxes/litigation-hold-mailbox-not-turn-into-inactive",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
+      "redirect_url": "./Microsoft365/compliance/microsoft-purview-welcome.yml",
+      "redirect_document_id": true
     },
     {
       "source_path": "Microsoft365/compliance/sensitivity-labels/encrypted-email-cannot-send-many-recipients.md",
@@ -6457,11 +6462,6 @@
     {
       "source_path": "Microsoft365/compliance/sensitivity-labels/sensitivity-labels-missing.md",
       "redirect_url": "/microsoft-365/troubleshoot/sensitivity-labels/sensitivity-labels-missing",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
-      "redirect_url": "./Microsoft365/compliance/microsoft-purview-welcome.yml",
       "redirect_document_id": true
     },
     {
