@@ -2006,7 +2006,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/owa-mailbox/items-missing-search-results.md",
+      "source_path": "Microsoft365/purview/owa-mailbox/items-missing-search-results.md",
       "redirect_url": "/exchange/troubleshoot/owa-issues/items-missing-search-results",
       "redirect_document_id": false
     },
@@ -3636,22 +3636,22 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/mrm-rentention-policies/cannot-manage-disposition-reviews.md",
+      "source_path": "Microsoft365/purview/mrm-rentention-policies/cannot-manage-disposition-reviews.md",
       "redirect_url": "/microsoft-365/troubleshoot/retention/cannot-manage-disposition-reviews",
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/mrm-rentention-policies/cannot-retain-cloud-attachments.md",
+      "source_path": "Microsoft365/purview/mrm-rentention-policies/cannot-retain-cloud-attachments.md",
       "redirect_url": "/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments",
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/mrm-rentention-policies/managed-folders-disappear.md",
+      "source_path": "Microsoft365/purview/mrm-rentention-policies/managed-folders-disappear.md",
       "redirect_url": "/microsoft-365/troubleshoot/retention/managed-folders-disappear",
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/mrm-rentention-policies/mrm-and-retention-policy.md",
+      "source_path": "Microsoft365/purview/mrm-rentention-policies/mrm-and-retention-policy.md",
       "redirect_url": "/microsoft-365/troubleshoot/retention/mrm-and-retention-policy",
       "redirect_document_id": true
     },
@@ -6105,47 +6105,47 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/archive-mailboxes/cannot-view-items.md",
+      "source_path": "Microsoft365/purview/archive-mailboxes/cannot-view-items.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/data-loss-prevention/data-loss-prevention-tips.md",
+      "source_path": "Microsoft365/purview/data-loss-prevention/data-loss-prevention-tips.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/data-loss-prevention/dlp-tips-not-work.md",
+      "source_path": "Microsoft365/purview/data-loss-prevention/dlp-tips-not-work.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/ediscovery/cannot-search-inactive-mailboxes.md",
+      "source_path": "Microsoft365/purview/ediscovery/cannot-search-inactive-mailboxes.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/ediscovery/cannot-start-ediscovery-pst-export.md",
+      "source_path": "Microsoft365/purview/ediscovery/cannot-start-ediscovery-pst-export.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/ediscovery/ediscovery-results-export-fails.md",
+      "source_path": "Microsoft365/purview/ediscovery/ediscovery-results-export-fails.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/ediscovery/ediscovery-searches-are-queued-indefinitely.md",
+      "source_path": "Microsoft365/purview/ediscovery/ediscovery-searches-are-queued-indefinitely.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/ediscovery/in-place-ediscovery-preview-not-available.md",
+      "source_path": "Microsoft365/purview/ediscovery/in-place-ediscovery-preview-not-available.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/holds/change-to-search-logic-for-title-property.md",
+      "source_path": "Microsoft365/purview/holds/change-to-search-logic-for-title-property.md",
       "redirect_url": "/previous-versions/troubleshoot/content-retirement",
       "redirect_document_id": false
     },
@@ -6462,6 +6462,11 @@
     {
       "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
       "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Microsoft365/hub/context/compliance-context.yml",
+      "redirect_url": "Microsoft365/hub/context/purview-context.yml",
       "redirect_document_id": true
     }
   ]
