@@ -1903,7 +1903,7 @@
     {
       "source_path": "Microsoft365/purview/compliance.md",
       "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Microsoft365/enterprise/enterprise.md",
@@ -6463,11 +6463,6 @@
       "source_path": "Microsoft365/compliance/sensitivity-labels/sensitivity-labels-missing.md",
       "redirect_url": "/microsoft-365/troubleshoot/sensitivity-labels/sensitivity-labels-missing",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "Microsoft365/hub/context/compliance-context.yml",
-      "redirect_url": "/microsoft-365/troubleshoot/context/purview-context.json",
-      "redirect_document_id": false
     },
     {
       "source_path": "Microsoft365/compliance/microsoft-purview-welcome.yml",
