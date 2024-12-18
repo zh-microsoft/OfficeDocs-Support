@@ -6208,6 +6208,11 @@
       "source_path": "Microsoft365/compliance/holds/litigation-hold-mailbox-not-turn-into-inactive.md",
       "redirect_url": "/exchange/troubleshoot/user-and-shared-mailboxes/litigation-hold-mailbox-not-turn-into-inactive",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
+      "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
+      "redirect_document_id": true
     }
   ]
 }
