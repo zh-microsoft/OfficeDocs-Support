@@ -6210,7 +6210,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
+      "source_path": "Microsoft365/purview/microsoft-365-compliance-welcome.yml",
       "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
       "redirect_document_id": true
     },
