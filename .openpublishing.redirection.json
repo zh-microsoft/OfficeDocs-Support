@@ -1171,7 +1171,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/compliance/holds/resolve-ediscovery-hold-issues.md",
+      "source_path": "Microsoft365/purview/holds/resolve-ediscovery-hold-issues.md",
       "redirect_url": "/microsoft-365/troubleshoot/ediscovery/resolve-ediscovery-hold-issues",
       "redirect_document_id": true
     },
@@ -6461,12 +6461,12 @@
     },
     {
       "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
-      "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
+      "redirect_url": "./Microsoft365/compliance/microsoft-purview-welcome.yml",
       "redirect_document_id": true
     },
     {
       "source_path": "Microsoft365/hub/context/compliance-context.yml",
-      "redirect_url": "Microsoft365/hub/context/purview-context.yml",
+      "redirect_url": "./Microsoft365/hub/context/purview-context.yml",
       "redirect_document_id": true
     }
   ]
