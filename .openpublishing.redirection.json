@@ -6211,7 +6211,7 @@
     },
     {
       "source_path": "Microsoft365/compliance/microsoft-365-compliance-welcome.yml",
-      "redirect_url": "./Microsoft365/compliance/microsoft-purview-welcome.yml",
+      "redirect_url": "/microsoft-365/troubleshoot/microsoft-purview-welcome",
       "redirect_document_id": true
     },
     {
