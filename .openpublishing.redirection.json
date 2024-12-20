@@ -6470,8 +6470,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Microsoft365/Hub/context/compliance-context.yml",
-      "redirect_url": "Microsoft365/Hub/context/purview-context",
+      "source_path_from_root": "/Microsoft365/Hub/context/compliance-context.json.yml",
+      "redirect_url": "/microsoft-365/troubleshoot/context/purview-context.json",
       "redirect_document_id": false
     }
   ]
