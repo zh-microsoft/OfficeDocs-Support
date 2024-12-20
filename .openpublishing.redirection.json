@@ -6471,7 +6471,7 @@
     },
     {
       "source_path": "Microsoft365/Hub/context/compliance-context.yml",
-      "redirect_url": "Microsoft365/Hub/context/purview-context.yml",
+      "redirect_url": "Microsoft365/Hub/context/purview-context",
       "redirect_document_id": false
     }
   ]
