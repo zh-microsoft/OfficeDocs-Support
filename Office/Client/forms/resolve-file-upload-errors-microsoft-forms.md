@@ -72,7 +72,7 @@ To fix this error for an individual form that you create, sign in to your OneDri
 
 To fix this error for a group form, sign in to the Microsoft 365 group's SharePoint site, and then follow these steps:
 
-1. Follow the steps in [Enable or disable site collection features](https://support.microsoft.com/office/enable-or-disable-site-collection-features-a2f2a5c2-093d-4897-8b7f-37f86d83df04) to disable the **Limited-access user permission lockdown mode** site collection feature is enabled if it's enabled.
+1. Follow the steps in [Enable or disable site collection features](https://support.microsoft.com/office/enable-or-disable-site-collection-features-a2f2a5c2-093d-4897-8b7f-37f86d83df04) to disable the **Limited-access user permission lockdown mode** site collection feature if it's enabled.
 1. Enable the *People in your organization* sharing links if they're disabled.
 
     **Note**: You must be a SharePoint Online administrator and a site collection administrator to run the following PowerShell commands in [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
@@ -108,9 +108,16 @@ To fix this error for a group form, sign in to the Microsoft 365 group's SharePo
 
 ## Error: Failed to upload your file
 
-This error occurs if the [*People in your organization* sharing links](/microsoft-365/solutions/microsoft-365-limit-sharing?view=o365-worldwide#people-in-your-organization-sharing-links&preserve-view=true) are disabled.
+This error can occur for the following reasons:
 
-To fix this error, enable the links by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps&preserve-view=true) PowerShell command in [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+- The [*People in your organization* sharing links](/microsoft-365/solutions/microsoft-365-limit-sharing?view=o365-worldwide#people-in-your-organization-sharing-links&preserve-view=true) are disabled.
+- An individual form was moved to a group, which prevents files from being uploaded to the prevoius form owner's OneDrive.
+
+### Resolution
+
+To fix this error, follow these steps:
+
+1. Enable the *People in your organization* sharing links if they're disabled by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps&preserve-view=true) PowerShell command in [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 **Note**: You must be a SharePoint Online administrator and a site collection administrator to run the following PowerShell commands.
 
@@ -149,9 +156,13 @@ To fix this error, enable the links by using the [Set-SPOSite](/powershell/modul
     > [!NOTE]
     > If information barriers are enabled in your SharePoint site, company-wide link sharing is disabled if the [mode](/purview/information-barriers-sharepoint#sharing-sites-for-ib-modes) is set to **Owner Moderated**, **Implicit**, or **Explicit**. In this case, change the information barriers mode to **Open**. To check the information barriers mode of your site, run the `Get-SPOSite <Group SharePoint site URL> | Select InformationBarriersMode` PowerShell command.
 
+2. If the form was moved from an individual to a group, delete the file upload questions and recreate them. The previous files uploaded will remain in the previous form owner's OneDrive. After recreating the file upload questions, the new questions will be linked the corresponding SharePoint site associated with the group, so all files will be uploaded there.
+
 ## Error: Access denied. You do not have permissions to perform this action or access this resource
 
 This issue occurs if you try to access the form by using an unmanaged device while SharePoint access is blocked for unmanaged devices.
+
+### Resolution
 
 To fix this error, follow these steps as a SharePoint administrator:
 
