@@ -108,55 +108,60 @@ To fix this error for a group form, sign in to the Microsoft 365 group's SharePo
 
 ## Error: Failed to upload your file
 
-This error can occur for the following reasons:
+This error can occur for one of the following reasons:
 
 - The [*People in your organization* sharing links](/microsoft-365/solutions/microsoft-365-limit-sharing?view=o365-worldwide#people-in-your-organization-sharing-links&preserve-view=true) are disabled.
-- An individual form was moved to a group, which prevents files from being uploaded to the prevoius form owner's OneDrive.
+- An individual form is moved to a group, which prevents files from being uploaded to the prevoius form owner's OneDrive.
 
 ### Resolution
 
-To fix this error, follow these steps:
+To fix this error, use one of the following methods accordingly.
 
-1. Enable the *People in your organization* sharing links if they're disabled by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps&preserve-view=true) PowerShell command in [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+- If the *People in your organization* sharing links are disabled
 
-**Note**: You must be a SharePoint Online administrator and a site collection administrator to run the following PowerShell commands.
+  Enable the links by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps&preserve-view=true) PowerShell command in [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-- For an individual form that you create, run the following PowerShell command:
+  **Note**: You must be a SharePoint Online administrator and a site collection administrator to run the following PowerShell commands.
 
-    ```powershell
-    Set-SPOSite -Identity <your OneDrive site URL> -DisableCompanyWideSharingLinks NotDisabled
-    ```
+  - For an individual form that you create, run the following PowerShell command:
 
-    To verify the status of link sharing, run the following PowerShell command:
+     ```powershell
+     Set-SPOSite -Identity <your OneDrive site URL> -DisableCompanyWideSharingLinks NotDisabled
+     ```
 
-    ```powershell
-    (Get-SPOSite <your OneDrive site URL>).DisableCompanyWideSharingLinks
-    ```
+     To verify the status of link sharing, run the following PowerShell command:
 
-    Typically, the URL for a personal OneDrive site is in the following format:
+     ```powershell
+     (Get-SPOSite <your OneDrive site URL>).DisableCompanyWideSharingLinks
+     ```
 
-    `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+     Typically, the URL for a personal OneDrive site is in the following format:
 
-- For a group form, run the following PowerShell command:
+     `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-    ```powershell
-    Set-SPOSite -Identity <Group SharePoint site URL> -DisableCompanyWideSharingLinks NotDisabled
-    ```
+  - For a group form, run the following PowerShell command:
 
-    To verify the status of link sharing, run the following PowerShell command:
+     ```powershell
+     Set-SPOSite -Identity <Group SharePoint site URL> -DisableCompanyWideSharingLinks NotDisabled
+     ```
 
-    ```powershell
-    (Get-SPOSite <Group SharePoint site URL>).DisableCompanyWideSharingLinks
-    ```
+     To verify the status of link sharing, run the following PowerShell command:
 
-    Typically, the URL for a group SharePoint site is in the following format:
+     ```powershell
+     (Get-SPOSite <Group SharePoint site URL>).DisableCompanyWideSharingLinks
+     ```
 
-    `https://<tenant-name>.sharepoint.com/sites/<group-name>`
+     Typically, the URL for a group SharePoint site is in the following format:
 
-    > [!NOTE]
-    > If information barriers are enabled in your SharePoint site, company-wide link sharing is disabled if the [mode](/purview/information-barriers-sharepoint#sharing-sites-for-ib-modes) is set to **Owner Moderated**, **Implicit**, or **Explicit**. In this case, change the information barriers mode to **Open**. To check the information barriers mode of your site, run the `Get-SPOSite <Group SharePoint site URL> | Select InformationBarriersMode` PowerShell command.
+     `https://<tenant-name>.sharepoint.com/sites/<group-name>`
 
-2. If the form was moved from an individual to a group, delete the file upload questions and recreate them. The previous files uploaded will remain in the previous form owner's OneDrive. After recreating the file upload questions, the new questions will be linked the corresponding SharePoint site associated with the group, so all files will be uploaded there.
+     > [!NOTE]
+     > If information barriers are enabled in your SharePoint site, company-wide link sharing is disabled if the [mode](/purview/information-barriers-sharepoint#sharing-sites-for-ib-modes) is set to **Owner Moderated**, **Implicit**, or **Explicit**. In this case, change the information barriers mode to **Open**. To check the information barriers mode of your site, run the `Get-SPOSite <Group SharePoint site URL> | Select InformationBarriersMode` PowerShell command.
+- If an individual form is moved to a Microsoft 365 group
+
+  Delete the file upload questions and recreate them. The previously uploaded files will remain in the previous form owner's OneDrive. 
+  
+  After you recreate the file upload questions, these new questions will be linked to the group's SharePoint site, and all files will be uploaded to the SharePoint site.
 
 ## Error: Access denied. You do not have permissions to perform this action or access this resource
 
